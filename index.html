@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>eternaldensity — games & toys</title>
+<meta name="description" content="Playable web games and open-source prototypes by eternaldensity." />
+<style>
+  :root {
+    color-scheme: dark;
+    --bg: #0e0f13;
+    --panel: #16181f;
+    --line: #262a36;
+    --txt: #e8e6e1;
+    --mut: #9a97a3;
+    --acc: #8fd3c7;
+    --acc2: #e8b4a0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--txt);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  main { max-width: 880px; margin: 0 auto; padding: 56px 20px 80px; }
+  header h1 { margin: 0; font-size: 2rem; letter-spacing: -0.02em; }
+  header h1 span { color: var(--acc); }
+  header p { color: var(--mut); max-width: 60ch; margin: 8px 0 0; }
+  .meta { margin-top: 12px; font-size: 0.9rem; color: var(--mut); }
+  .meta a { color: var(--acc); }
+  h2 { margin: 40px 0 12px; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--mut); }
+  .grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 16px;
+    display: flex; flex-direction: column; gap: 8px;
+  }
+  .card:hover { border-color: #3a4054; }
+  .card h3 { margin: 0; font-size: 1.05rem; }
+  .card p { margin: 0; color: var(--mut); font-size: 0.92rem; flex: 1; }
+  .links { display: flex; gap: 8px; margin-top: 8px; }
+  .links a {
+    font-size: 0.85rem; text-decoration: none;
+    border: 1px solid var(--line); border-radius: 999px;
+    padding: 4px 12px; color: var(--txt);
+  }
+  .links a.live { background: var(--acc); border-color: var(--acc); color: #0b1210; font-weight: 600; }
+  .links a:hover { border-color: var(--acc); }
+  .tag { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--acc2); }
+  .card.wide { margin-top: 40px; flex-direction: row; align-items: center; justify-content: space-between; gap: 16px; }
+  .card.wide p { flex: 1; }
+  a { color: inherit; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1><span>eternaldensity</span> — games &amp; toys</h1>
+    <p>Small web games and prototypes. <strong>live</strong> = GitHub Pages build; <strong>play</strong> = hosted elsewhere; everything with source links to its <strong>repo</strong>.</p>
+    <div class="meta"><a href="https://github.com/eternaldensity">github.com/eternaldensity</a> · 6 on Pages · 4 hosted elsewhere</div>
+  </header>
+
+  <h2>Playable now</h2>
+  <div class="grid">
+    <article class="card">
+      <h3>smile — Remade Games</h3>
+      <p>Modern web remakes of old VB games: Smile II/III, Space, Penguin. 1P + 2P puzzlers.</p>
+      <div class="links"><a class="live" href="https://eternaldensity.github.io/smile/">live</a><a href="https://github.com/eternaldensity/smile">repo</a></div>
+    </article>
+    <article class="card">
+      <h3>hacker-sim</h3>
+      <p>Hacker Sim — Oldnet vs Betanet. Playable 2006-doc prototype. Terminal, trace, no frameworks.</p>
+      <div class="links"><a class="live" href="https://eternaldensity.github.io/hacker-sim/">live</a><a href="https://github.com/eternaldensity/hacker-sim">repo</a></div>
+    </article>
+    <article class="card">
+      <h3>fiction-viewer — The Cosy Nook</h3>
+      <p>Static fiction reader. ODT stories → cozy paginated site. No backend, runs anywhere.</p>
+      <div class="links"><a class="live" href="https://eternaldensity.github.io/fiction-viewer/">live</a><a href="https://github.com/eternaldensity/fiction-viewer">repo</a></div>
+    </article>
+    <article class="card">
+      <h3>ttm — Troggle Trouble Math</h3>
+      <p>1994 MECC tribute + decompilation notes. Single-file HTML5 remake.</p>
+      <div class="links"><a class="live" href="https://eternaldensity.github.io/ttm/">live</a><a href="https://github.com/eternaldensity/ttm">repo</a></div>
+    </article>
+    <article class="card">
+      <h3>Excuse-Generator</h3>
+      <p>Armsmaster's Random Excuse Generator. Silly random excuses, installable PWA.</p>
+      <div class="links"><a class="live" href="https://eternaldensity.github.io/Excuse-Generator/">live</a><a href="https://github.com/eternaldensity/Excuse-Generator">repo</a></div>
+    </article>
+    <article class="card">
+      <h3>ChaosGacha</h3>
+      <p>Customizable chaos gacha roller — ~4.2k entries, adjustable odds, custom lists.</p>
+      <div class="links"><a class="live" href="https://eternaldensity.github.io/ChaosGacha/">live</a><a href="https://github.com/eternaldensity/ChaosGacha">repo</a></div>
+    </article>
+  </div>
+
+  <h2>Hosted elsewhere</h2>
+  <div class="grid">
+    <article class="card">
+      <div class="tag">cards · cybernetic.gay</div>
+      <h3>ipso-factro</h3>
+      <p>Strategic deck-builder: throughput × efficiency. Terminal + web.</p>
+      <div class="links"><a class="live" href="https://cybernetic.gay/ipso-factro/">play</a><a href="https://github.com/eternaldensity/ipso-factro">repo</a></div>
+    </article>
+    <article class="card">
+      <div class="tag">cards · F# · cybernetic.gay</div>
+      <h3>card-rush</h3>
+      <p>Speed card battler. Play your deck from 4 piles before the timer runs out, then spend seconds on upgrades.</p>
+      <div class="links"><a class="live" href="https://cybernetic.gay/card-rush/">play</a></div>
+    </article>
+    <article class="card">
+      <div class="tag">godot · cybernetic.gay</div>
+      <h3>healer — Godot prototype</h3>
+      <p>Early “Healer? I Hardly Know Her” Godot build. Deckbuilding VN about healing.</p>
+      <div class="links"><a class="live" href="https://cybernetic.gay/healer/Healer.html">play</a></div>
+    </article>
+    <article class="card">
+      <div class="tag">js · idle · crashsnowdon.com</div>
+      <h3>Sandcastle test build</h3>
+      <p>Sandbox test deployment of the xkcd 1190: Time idle game.</p>
+      <div class="links"><a class="live" href="https://crashsnowdon.com/sandtest/index.html">play</a><a href="https://github.com/eternaldensity/Sandcastle-Builder">repo</a></div>
+    </article>
+  </div>
+
+  <h2>Prototypes &amp; source</h2>
+  <div class="grid">
+    <article class="card">
+      <div class="tag">rust · bevy</div>
+      <h3>railsphere</h3>
+      <p>Transport tycoon on a procedural sphere. Rails on a 30-face planet, economy + multiplayer-ready.</p>
+      <div class="links"><a href="https://github.com/eternaldensity/railsphere">repo</a></div>
+    </article>
+    <article class="card">
+      <div class="tag">rust · bevy</div>
+      <h3>belts</h3>
+      <p>Factory-RPG prototype — mining, conveyors, combat, settlements, dungeons.</p>
+      <div class="links"><a href="https://github.com/eternaldensity/belts">repo</a></div>
+    </article>
+    <article class="card">
+      <div class="tag">mod</div>
+      <h3>belt-quest</h3>
+      <p>Factory-RPG data+script mod for WildForge, ported from belts.</p>
+      <div class="links"><a href="https://github.com/eternaldensity/belt-quest">repo</a></div>
+    </article>
+    <article class="card">
+      <div class="tag">rust · wgpu</div>
+      <h3>cardshop-cleanup</h3>
+      <p>Card Shop Tidy-Up — first-person tidy-up game in a card store.</p>
+      <div class="links"><a href="https://github.com/eternaldensity/cardshop-cleanup">repo</a></div>
+    </article>
+    <article class="card">
+      <div class="tag">elixir</div>
+      <h3>botgrade</h3>
+      <p>Tactical deck-building roguelike. Pilot a robot, scavenge parts. Phoenix LiveView.</p>
+      <div class="links"><a href="https://github.com/eternaldensity/botgrade">repo</a></div>
+    </article>
+    <article class="card">
+      <div class="tag">elixir</div>
+      <h3>spheric</h3>
+      <p>Factory game in Phoenix — buildings, recipes, power, research, territory.</p>
+      <div class="links"><a href="https://github.com/eternaldensity/spheric">repo</a></div>
+    </article>
+    <article class="card">
+      <div class="tag">godot</div>
+      <h3>rat-gacha</h3>
+      <p>Gacha Park Tycoon — Godot park sim with machines, crowds, pulls.</p>
+      <div class="links"><a href="https://github.com/eternaldensity/rat-gacha">repo</a></div>
+    </article>
+    <article class="card">
+      <div class="tag">rust · vn</div>
+      <h3>healer-hardly</h3>
+      <p>“Healer? I Hardly Know Her” — roguelite deckbuilding VN about healing.</p>
+      <div class="links"><a href="https://github.com/eternaldensity/healer-hardly">repo</a></div>
+    </article>
+    <article class="card">
+      <div class="tag">rust · tools</div>
+      <h3>multitrack_workspace</h3>
+      <p>Healer-hardly workspace + Multitrack Weaving dialogue-flow editor.</p>
+      <div class="links"><a href="https://github.com/eternaldensity/multitrack_workspace">repo</a></div>
+    </article>
+    <article class="card">
+      <div class="tag">js · idle</div>
+      <h3>Sandcastle-Builder</h3>
+      <p>xkcd 1190: Time idle game. Long-running community JS game.</p>
+      <div class="links"><a href="https://github.com/eternaldensity/Sandcastle-Builder">repo</a></div>
+    </article>
+    <article class="card">
+      <div class="tag">practice</div>
+      <h3>guild-projects</h3>
+      <p>Tiny practice builds — recipe collection, intent exercises.</p>
+      <div class="links"><a href="https://github.com/eternaldensity/guild-projects">repo</a></div>
+    </article>
+  </div>
+
+  <section class="card wide">
+    <div>
+      <h3>eternaldensity</h3>
+      <p>More notes, builds, and chaos elsewhere.</p>
+    </div>
+    <div class="links"><a href="https://bsky.app/profile/her.toy.cybernetic.gay">bluesky</a><a href="https://github.com/eternaldensity">github</a></div>
+  </section>
+</main>
+</body>
+</html>
